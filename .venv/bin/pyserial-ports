@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/media/mogahed/New Volume1/eng/courses/IT/projects/automation/lab1/.venv/bin/python" "$0" "$@"
+' '''
+import sys
+from serial.tools.list_ports import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
